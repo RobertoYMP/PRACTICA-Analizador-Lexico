@@ -9,7 +9,7 @@
  * @author Daniel
  */
 
- package com.mycompany.analiza;
+ package com.mycompany.analizadorllex;
 public class Token {
 
     final TipoToken tipo;
