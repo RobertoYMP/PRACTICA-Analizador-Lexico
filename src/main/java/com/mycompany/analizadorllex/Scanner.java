@@ -45,7 +45,23 @@ public class Scanner {
         int estado = 0;
         String lexema = "";
         char c;
-    
  
 }
+
+// estado 0 de operand
+                case 1:
+                        if(c == '='){
+        Token t = new Token(TipoToken.GREATER_EQUAL, lexema);
+        tokens.add(t);
+    }else{
+        Token t = new Token(TipoToken.GREATER, lexema);
+        tokens.add(t);
+        i--;
+    }
+
+    estado = 0;
+    lexema = "";
+
+                    break;
+//-----
 
